@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/backpack-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/backpack-{{ version }}.tar.gz
   sha256: 0162cf7b34c810ba4ddbbd32a1e5e804ef96fcf2fea5ce2848aa4950770d3893
 
 build:
-  number: 1007
+  number: 1008
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
